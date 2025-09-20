@@ -5,7 +5,7 @@ import { title } from "process";
 import { ListViewType } from "@/lib/_type";
 import ListView from "./components/ListView";
 
-type Props = {};
+type Props = Record<string, never>;
 
 const page = async (props: Props) => {
   const myList: ListViewType[] = await prisma.todo.findMany({

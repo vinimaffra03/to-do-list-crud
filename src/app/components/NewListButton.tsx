@@ -11,7 +11,7 @@ import { prisma } from "@/prisma";
 import { revalidatePath } from "next/cache";
 import React from "react";
 
-type Props = {};
+type Props = Record<string, never>;
 
 async function createTask(formData: FormData) {
   "use server";
